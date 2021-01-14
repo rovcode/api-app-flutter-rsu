@@ -3,7 +3,8 @@
 <head>
 	<title>@yield('title')</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Esto es un prototipo, buscamos validar y entender el proceso de nuestra app!! "/>
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
