@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="description" content="Esto es un prototipo, buscamos validar y entender el proceso de nuestra app!! "/>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
