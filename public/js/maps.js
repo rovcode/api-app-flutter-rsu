@@ -35,13 +35,13 @@
         }
     
         var locations = [
-            [locationData('listing-single2.html', 'Food and Drink', 'images/all/8.jpg', 'Luxury Restourant', "1327 Intervale Ave, Bronx, NY ", "+38099231212", "5", "27"), -12.0285877, -77.0161032, 0, markerIcon],
-            [locationData('listing-single.html', 'Conference and Events', 'images/all/1.jpg', 'Event In City Mol', "W 85th St, New York, NY ", "+38099231212", "4", "5"), -12.0291677, -77.0165942, 1, markerIcon],
-            [locationData('listing-single.html', 'Food and Drink', 'images/all/4.jpg', 'Luxury Restourant', "40 Journal Square Plaza, Jersey City, NJ", "+38099231212", "4", "5"), -12.0280997, -77.0169802, 2, markerIcon],
-            [locationData('listing-single.html', 'Gym - Fitness', 'images/all/20.jpg', 'Gym in the Center', "75 Prince St, New York, NY ", "+38099231212", "4", "127"), -12.0260507, -77.0178732, 3, markerIcon],
-            [locationData('listing-single.html', 'Shop - Store', 'images/all/5.jpg', 'Shop in Boutique Zone', "34-42 Montgomery St, New York, NY", "+38099231212", "5", "43"), -12.0268667, -77.0178892, 4, markerIcon],
+            [locationData('https://delifazil.com/', 'Bodega Juanita', 'https://static.mercadonegro.pe/wp-content/uploads/2020/04/22203358/Bodegas-Per%C3%BA-1.jpg', 'Bodega 1', "Talara 135", "980866911", "5", "27"), -12.0285877, -77.0161032, 0, markerIcon],
+            [locationData('https://delifazil.com/', 'Bodega El Rey', 'https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PLLNGGZRBRBA3EZVL4JEFYKABA.jpg', 'Bodega 2', "Talara 139", "980866911", "4", "5"), -12.0291677, -77.0165942, 1, markerIcon],
+            [locationData('https://delifazil.com/', 'Mi Bodeguita', 'https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PLLNGGZRBRBA3EZVL4JEFYKABA.jpg', 'Bodega 3', "El bosque 1030", "980866911", "4", "5"), -12.0280997, -77.0169802, 2, markerIcon],
+            [locationData('https://delifazil.com/', 'Bodega Perú', 'https://static.mercadonegro.pe/wp-content/uploads/2020/04/22203358/Bodegas-Per%C3%BA-1.jpg', 'Bodega 4', "Talara 1365", "980866911", "4", "127"), -12.0260507, -77.0178732, 3, markerIcon],
+            [locationData('https://delifazil.com/', 'Bodega Delifazil', 'https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PLLNGGZRBRBA3EZVL4JEFYKABA.jpg', 'Bodega 5', "Calle 356", "980866911", "5", "43"), -12.0268667, -77.0178892, 4, markerIcon],
             // [locationData('listing-single.html', 'Hotels', '', 'El Fanático', "70 Bright St, Jersey City, NJ", "+38099231212", "4", "7"), lu, longu, 5, markerIconUser],
-            [locationData('listing-single.html', 'Shop - Store', 'images/all/6.jpg', 'Shop In City Mol', "123 School St. Lynchburg, NY ", "+38099231212", "3", "4"), -12.0286187, -77.0164489, 6, markerIcon],
+            [locationData('https://delifazil.com/', 'Mi tiendita', 'https://static.mercadonegro.pe/wp-content/uploads/2020/04/22203358/Bodegas-Per%C3%BA-1.jpg', 'Bodega 6', "123 Calle nueva", "980866911", "3", "4"), -12.0286187, -77.0164489, 6, markerIcon],
             // [locationData('listing-single2.html', 'Hotels', 'images/all/22.jpg', 'Fancy Hotel', "Mt Carmel Pl, New York, NY", "+38099231212", "5", "3"), 40.58423508, -73.96099091, 7, markerIcon],
             // [locationData('listing-single2.html', 'Hotels', 'images/all/7.jpg', 'Luxary Hotel-Spa', "1-30 Hunters Point Ave, Long Island City, NY", "+38099231212", "5", "12"), 40.58110616, -73.97678375, 8, markerIcon],
             // [locationData('listing-single3.html', 'Conference and Events', 'images/all/16.jpg', 'Web Design Event ', "726-1728 2nd Ave, New York, NY", "+38099231212", "5", "17"), 40.73112881, -74.07897948, 9, markerIcon],
