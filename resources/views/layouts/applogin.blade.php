@@ -27,6 +27,11 @@
 	<link rel="stylesheet" type="text/css" href="init/css/util.css">
 	<link rel="stylesheet" type="text/css" href="init/css/main.css">
 <!--===============================================================================================-->
+    <!--=============== css  ===============-->	
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/plugins.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/color.css">
 </head>
     <body>
         @yield('content')

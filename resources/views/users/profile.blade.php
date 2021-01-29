@@ -13,7 +13,7 @@
         <div class="content">
             <!--section --> 
             <section>
-                <!-- container -->
+                <!-- container --> 
                 <div class="container">
                     <!-- profile-edit-wrap -->
                     <div class="profile-edit-wrap">
@@ -32,15 +32,15 @@
                                     </div>
                                     <div class="custom-form">
                                         <label>Nombres <i class="fa fa-user-o"></i></label>
-                                        <input type="text" placeholder="AlisaNoory" value=""/>
+                                        <input type="text" placeholder="" value="{{ Auth::user()->name }}"/>
                                         <label>Usuario<i class="fa fa-envelope-o"></i>  </label>
-                                        <input type="text" placeholder="AlisaNoory@domain.com" value=""/>
+                                        <input type="text" placeholder="mail" value="{{ Auth::user()->email }}"/>
                                         <label>Teléfono<i class="fa fa-phone"></i>  </label>
-                                        <input type="text" placeholder="+7(123)987654" value=""/>
+                                        <input type="text" placeholder="+7(123)987654" value="{{ Auth::user()->phone }}"/>
                                         <label> Dirección <i class="fa fa-map-marker"></i>  </label>
-                                        <input type="text" placeholder="USA 27TH Brooklyn NY" value=""/>
-                                        <label> Website <i class="fa fa-globe"></i>  </label>
-                                        <input type="text" placeholder="themeforest.net" value=""/>  
+                                        <input type="text" placeholder="No definido" value=""/>
+                                        {{-- <label> Website <i class="fa fa-globe"></i>  </label>
+                                        <input type="text" placeholder="themeforest.net" value=""/>   --}}
                                         <label> Notes</label>                                              
                                         <textarea cols="40" rows="3" placeholder="About Me"></textarea>
                                     </div>
@@ -97,9 +97,7 @@
                                         <label>Facebook <i class="fa fa-facebook"></i></label>
                                         <input type="text" placeholder="https://www.facebook.com/" value=""/>
                                         <label>Twitter<i class="fa fa-twitter"></i>  </label>
-                                        <input type="text" placeholder="https://twitter.com/" value=""/>
-                                        <label>Vkontakte<i class="fa fa-vk"></i>  </label>
-                                        <input type="text" placeholder="vk.com" value=""/>
+                                        <input type="text" placeholder="https://twitter.com/" value=""/>                                      
                                         <label> Whatsapp <i class="fa fa-whatsapp"></i>  </label>
                                         <input type="text" placeholder="https://www.whatsapp.com" value=""/>
                                         <button class="btn  big-btn  color-bg flat-btn">Guardar Cambios <i class="fa fa-angle-right"></i></button>

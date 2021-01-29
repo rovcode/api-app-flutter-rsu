@@ -75,7 +75,8 @@
 @section('title')Login Delifazil @endsection
 @section('content')
     	
-	<div class="container-login100" style="background-image: url('https://delifazil.com/assets/img/banner/b0.2.png');">
+    <div class="container-login100" style="background-image: url('https://delifazil.com/assets/img/banner/b0.2.png');">
+        
 		<div class="wrap-login100 p-l-55 p-r-55 p-t-40 p-b-30">
             <form class="login100-form validate-form" method="POST" action="{{ route('login') }}">
                 @csrf
@@ -124,37 +125,7 @@
                             </span>
                         @enderror
                     </div>
-                </div>
-              
-               <!--input user-->
-               {{-- <label  class="col-md-4 col-form-label text-md-right">{{ __('Usuario') }}</label> --}}
-
-				{{-- <div class="wrap-input100 validate-input m-b-20  @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" data-validate="Ingrese su usuario o teléfono"  required autocomplete="email" autofocus>
-					<input id="email" for="email" type="email" class="input100"  name="email" placeholder="980866911">
-                    <span class="focus-input100"></span>
-                    @error('email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                    @enderror
-                </div> --}}
-                
-
-               
-               <!--input pass-->
-               {{-- <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label> --}}
-				{{-- <div class="wrap-input100 validate-input m-b-25" data-validate = "Ingrese contraseña">
-					<input class="input100" id="password" type="password" name="password" placeholder="Contraseña" @error('password') is-invalid @enderror required autocomplete="current-password">
-                    <span class="focus-input100"></span>
-                    @error('password')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                </div>            --}}
-
-
-
+                </div>            
 				<div class="container-login100-form-btn" style="margin-top: 5px !important">
 					{{-- <a class="login100-form-btn" href="dashboard">
 						Iniciar Sesión
@@ -192,7 +163,9 @@
 					</a>
 				</div>
 			</form>			
-		</div>
-	</div>	
+        </div>
+         
+    </div>
+    		
 @endsection
 
