@@ -16,7 +16,7 @@ class CreatePlanesTable extends Migration
         Schema::create('planes', function (Blueprint $table) {
         $table->increments('id')->nullable(false);
         $table->char('name',15)->nullable(false);
-        $table->integer('costo',3)->nullable(false);
+        $table->integer('costo',3)->unsigned();
         $table->string('beneficio1');
         $table->string('beneficio2');   
         $table->string('beneficio3');   
