@@ -16,17 +16,17 @@ class CreatePlanesTable extends Migration
         Schema::create('planes', function (Blueprint $table) {
         $table->increments('id')->nullable(false);
         $table->char('name',15)->nullable(false);
-        $table->integer('costo')->nullable(false);
-        $table->string('beneficio1')->unique();
-        $table->string('beneficio2')->unique();   
-        $table->string('beneficio3')->unique();   
-        $table->string('beneficio4')->unique();   
-        $table->string('beneficio5')->unique();   
-        $table->string('beneficio6')->unique();   
-        $table->string('beneficio7')->unique();
-        $table->string('beneficio8')->unique();   
-        $table->string('beneficio9')->unique();   
-        $table->string('beneficio10')->unique();  
+        $table->integer('costo',3)->nullable(false);
+        $table->string('beneficio1');
+        $table->string('beneficio2');   
+        $table->string('beneficio3');   
+        $table->string('beneficio4');   
+        $table->string('beneficio5');   
+        $table->string('beneficio6');   
+        $table->string('beneficio7');
+        $table->string('beneficio8');   
+        $table->string('beneficio9');   
+        $table->string('beneficio10');  
             $table->timestamps();
         });
     }
