@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\delifazil\Suscription;
-
+use App\Models\delifazil\Planes;
 class UsuarioController extends Controller
 {
       /**
@@ -27,7 +27,7 @@ class UsuarioController extends Controller
     {
         $user_id= Auth()->user()->id;      
         $userSucription = Suscription::where('user_id', $user_id)->first();
-        dd($userSucription);
-        return view('users.profile',['suscription'=>$userSucription]);
+        $plan=Planes::where('id',$userSucription->plan_id)->first();
+        return view('users.profile',['plan'=>$plan]);
     }
 }

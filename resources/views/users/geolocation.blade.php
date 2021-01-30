@@ -9,7 +9,7 @@
         <!--loader end-->
         <!-- Main  -->
       
-            @include('./snippets/header')  
+            @include('./snippets/alterno')  
             <!-- wrapper -->
             <div id="wrapper">
                 <div class="content">

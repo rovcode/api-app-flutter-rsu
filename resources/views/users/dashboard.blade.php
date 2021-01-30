@@ -20,7 +20,7 @@
     </style>
 
     <!--  loader end -->
-    @include('./snippets/header')
+    @include('./snippets/alterno')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Main   -->
     <script>
@@ -64,7 +64,7 @@
             <div class="container">
                 <div class="notification success fl-wrap">
                     @if($suscription=="Activo")
-                     <p class="msguser">Tu suscripción está activa y vence en <a href="perfil" style="color: blue">{{$terminasuscription}}</a> días!</p>                    
+                     <p class="msguser">Tu suscripción está activa y vence en <a href="perfil" style="color: #212121">{{$terminasuscription}}</a> días!</p>                    
                     @endif
                     <a class="notification-close" href="#"><i class="fa fa-times"></i></a> 
                 </div>
@@ -97,7 +97,7 @@
                                         <div class="list-post-counter"><span>4</span><i class="fa fa-heart"></i></div>
                                     </div>
                                     <div class="geodir-category-content fl-wrap">
-                                        <a class="listing-geodir-category" href="chekout/{{ $receta->id }}">Pedirla</a>
+                                        <a class="listing-geodir-category" href="/checkout/{{ $receta->id }}">Pedirla</a>
                                         <div class="listing-avatar"><a href="#"><img
                                                     src="https://www.tu-app.net/blog/wp-content/uploads/2020/08/informacion-montar-una-franquicia-icono.png"
                                                     alt=""></a>
@@ -105,7 +105,7 @@
                                                 <strong>{{ $receta->nutritionists }}</strong>
                                                 <br> Chef: <strong>{{ $receta->chef }}</strong></span>
                                         </div>
-                                        <h3><a href="listing-single.html">{{ $receta->name }}</a></h3>
+                                        <h3><a href="#">{{ $receta->name }}</a></h3>
                                         <p>{{ $receta->description }}</p>
                                         <div class="geodir-category-options fl-wrap">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="{{ $receta->calification }}">

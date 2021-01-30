@@ -27,7 +27,7 @@ class RecetaController extends Controller
             return view('users.planes', $datos);
          } 
          $status=$userSucription->status;
-         $fInicio=$userSucription->created_at;
+         $fInicio=$userSucription->updated_at;
          $fFin=$userSucription->fin_created_at;       
          $fechaEmision = Carbon::parse($fInicio);
          $fechaExpiracion = Carbon::parse($fFin);        
@@ -68,9 +68,10 @@ class RecetaController extends Controller
      * @param  \App\Models\delifazil\receta  $receta
      * @return \Illuminate\Http\Response
      */
-    public function show(receta $receta)
-    {
-        //
+    public function show(receta $id)    {
+        $receta = $id;
+       ;
+        return view('users.listreceta',['receta'=>$receta]);
     }
 
     /**

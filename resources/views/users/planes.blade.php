@@ -6,7 +6,7 @@
         <div class="pulse"></div>
     </div>
     <!--  loader end -->
-    @include('./snippets/header')
+    @include('./snippets/alterno')
     <!-- wrapper -->
     <div id="wrapper">
         <!--  content -->
@@ -177,7 +177,7 @@
                 });
             }
             function success() {
-            $("#msgp").html("Gracias ya puedes disfutar de delifazil!");
+            $("#msgp").html("Gracias..ya puedes disfrutar de delifazil!");
             $("#msg").css('background-color','#009624');
         }
 

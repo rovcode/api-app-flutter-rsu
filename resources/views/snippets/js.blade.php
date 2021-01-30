@@ -1,12 +1,12 @@
 {{-- <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script> --}}
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/plugins.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/plugins.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/scripts.js')}}"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5YJ0yQVVsMgpqnz0KB_oi1Mv_lDTqVR0&libraries=places&callback=initAutocomplete"></script>
 
-<script type="text/javascript" src="js/map_infobox.js"></script>
-<script type="text/javascript" src="js/markerclusterer.js"></script>
-<script type="text/javascript" src="js/maps.js"></script>
+<script type="text/javascript" src="{{asset('js/map_infobox.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/markerclusterer.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/maps.js')}}"></script>
 
 
 {{-- 

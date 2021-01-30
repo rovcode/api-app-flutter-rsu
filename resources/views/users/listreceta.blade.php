@@ -6,7 +6,7 @@
         <div class="pulse"></div>
     </div>
     <!--  loader end -->
-    @include('./snippets/header')  
+    @include('./snippets/alterno')  
       <!-- ingredientes receta-->
    <!-- wrapper -->	
    <div id="wrapper">
@@ -19,7 +19,7 @@
                 <!-- profile-edit-wrap -->
                 <div class="profile-edit-wrap">
                     <div class="profile-edit-page-header">
-                        <h2>Detalles</h2>                            
+                        <h2>{{$receta->name}}</h2>                            
                     </div>
                     <div class="row">
                         <div class="col-md-12">
@@ -80,7 +80,7 @@
                                         <!-- act-widget-->
                                         <div class="act-widget fl-wrap">
                                             <div class="act-widget-header">
-                                                <h4>Ingrediente 1</h4>
+                                                <h4>{{$receta->ingredient1}}</h4>
                                                 <div class="onoffswitch">
                                                     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked="">
                                                     <label class="onoffswitch-label" for="myonoffswitch">
@@ -94,7 +94,7 @@
                                           <!-- act-widget-->
                                           <div class="act-widget fl-wrap">
                                             <div class="act-widget-header">
-                                                <h4>Ingrediente 2</h4>
+                                                <h4>{{$receta->ingredient2}}</h4>
                                                 <div class="onoffswitch">
                                                     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="ingrediente2" checked="">
                                                     <label class="onoffswitch-label" for="ingrediente2">
@@ -108,7 +108,7 @@
                                           <!-- act-widget-->
                                           <div class="act-widget fl-wrap">
                                             <div class="act-widget-header">
-                                                <h4>Ingrediente 3</h4>
+                                                <h4>{{$receta->ingredient3}}</h4>
                                                 <div class="onoffswitch">
                                                     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="ingrediente3" checked="">
                                                     <label class="onoffswitch-label" for="ingrediente3">
@@ -122,7 +122,7 @@
                                         <!-- act-widget-->
                                         <div class="act-widget fl-wrap">
                                             <div class="act-widget-header">
-                                                <h4>Ingrediente 4</h4>
+                                                <h4>{{$receta->ingredient4}}</h4>
                                                 <div class="onoffswitch">
                                                     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="ingrediente4"  checked="">
                                                     <label class="onoffswitch-label" for="ingrediente4">
@@ -136,7 +136,7 @@
                                         <!-- act-widget-->
                                         <div class="act-widget fl-wrap">
                                             <div class="act-widget-header">
-                                                <h4>Ingrediente 5</h4>
+                                                <h4>{{$receta->ingredient6}}</h4>
                                                 <div class="onoffswitch">
                                                     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" checked="">
                                                     <label class="onoffswitch-label" for="myonoffswitch3">
@@ -182,7 +182,7 @@
                             <!-- profile-edit-container--> 
                             <div class="profile-edit-container">
                                 <div class="custom-form">                                   
-                                    <button onclick="window.location.href='geolocation'" class="btn  big-btn  color-bg flat-btn">Enviar lista <i class="fa fa-angle-right"></i></button>
+                                    <button onclick="window.location.href='../geolocation'" class="btn  big-btn  color-bg flat-btn">Enviar lista <i class="fa fa-angle-right"></i></button>
                                 </div>
                             </div>
                             <!-- profile-edit-container end-->                                        

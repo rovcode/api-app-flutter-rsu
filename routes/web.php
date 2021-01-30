@@ -29,6 +29,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/home', 'RecetaController@index');
     Route::post('/suscription', "SuscriptionController@store");
     Route::get('/perfil', "UsuarioController@index");
+    Route::get('/checkout/{id}', "RecetaController@show");
     Route::get('/pedidos', function () {return view('users.pedidos');});
     Route::get('/suscripcion', function () {return view('users.suscription');});
     Route::get('/geolocation', function () {return view('users.geolocation');});

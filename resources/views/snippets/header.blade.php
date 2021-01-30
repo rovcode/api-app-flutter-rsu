@@ -1,9 +1,16 @@
   <!-- header  -->
-        <header class="main-header dark-header2 fs-header sticky">
+    <style>
+     .main-header {
+        position: fixed;
+        bottom: 100px !important;
+     }
+    </style>  
+  
+  <header class="main-header dark-header2 fs-header sticky" >
             <div class="header-inner">
                
                 <div class="logo-holder">
-                    <a href="dashboard"><img src="https://delifazil.com/assets/img/logo.png" alt=""></a>
+                    <a href="../dashboard"><img src="https://delifazil.com/assets/img/logo.png" alt=""></a>
                 </div>
                 {{-- <div class="header-search vis-header-search">
                     <div class="header-search-input-item">

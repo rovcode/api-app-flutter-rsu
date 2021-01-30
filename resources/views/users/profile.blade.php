@@ -6,7 +6,7 @@
         <div class="pulse"></div>
     </div>
     <!--  loader end -->
-    @include('./snippets/header')  
+    @include('./snippets/alterno')  
       <!-- wrapper -->	
       <div id="wrapper">
         <!--content -->  
@@ -58,7 +58,7 @@
                                                 <div class="add-list-media-header">
                                                     <label class="radio inline">                                                       
                                                        
-                                                    <input type="radio" name="gender">
+                                                    <input type="radio" name="planuser" @if($plan->id==1) checked @endif>
                                                     <span>Master Chef S/. 5.00 </span> 
                                                     </label>
                                                 </div>
@@ -68,7 +68,7 @@
                                             <div class="col-md-4">
                                                 <div class="add-list-media-header">
                                                     <label class="radio inline"> 
-                                                    <input type="radio" name="gender"  checked>
+                                                    <input type="radio" name="planuser" @if($plan->id==2) checked @endif>
                                                     <span>Super Chef S/. 10.00</span> 
                                                     </label>
                                                 </div>
@@ -78,7 +78,7 @@
                                             <div class="col-md-4">
                                                 <div class="add-list-media-header">
                                                     <label class="radio inline"> 
-                                                    <input type="radio" name="gender">
+                                                    <input type="radio" name="planuser" @if($plan->id==3) checked @endif>
                                                     <span>Deli Cheff S/. 15.00</span> 
                                                     </label>
                                                 </div>
