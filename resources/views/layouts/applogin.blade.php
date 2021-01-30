@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<title>@yield('title')</title>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#FA9E22" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Esto es un prototipo, buscamos validar y entender el proceso de nuestra app!! "/>
 <!--===============================================================================================-->	
