@@ -31,7 +31,7 @@
                 </span>
                 <div class="form-group row">
                     <div class="wrap-input100 validate-input m-b-5" data-validate="Ingrese teléfono">
-                        <input class="input100 @error('phone') is-invalid @enderror" id="phone" type="number" maxlength="9"  placeholder="980866911" name="phone" value="{{ old('email') }}" required autocomplete="phone">
+                        <input class="input100 @error('phone') is-invalid @enderror" id="phone" type="number" maxlength="9"  placeholder="980866911" name="phone" value="{{ old('email') }}" required autocomplete="phone" autofocus>
                         <span class="focus-input100"></span>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                 </div>
 				<div class="form-group row">
                     <div  class="wrap-input100 validate-input m-b-5" data-validate="Ingrese sus nombres">
-                        <input class="input100" id="name" type="text"" @error('name') is-invalid @enderror" name="name" placeholder="Rony Velásquez" required autocomplete="name" autofocus>
+                        <input class="input100" id="name" type="text"" @error('name') is-invalid @enderror" name="name" placeholder="Rony Velásquez" required autocomplete="name" >
                         <span class="focus-input100"></span>
                     </div>
                 </div>
