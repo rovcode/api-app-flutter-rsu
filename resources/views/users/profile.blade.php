@@ -17,9 +17,9 @@
                 <div class="container">
                     <!-- profile-edit-wrap -->
                     <div class="profile-edit-wrap">
-                        <div class="profile-edit-page-header">
+                        {{-- <div class="profile-edit-page-header">
                             <h2>Perfil</h2>                            
-                        </div>
+                        </div> --}}
                         <div class="row">
                             <div class="col-md-3">
 
@@ -107,7 +107,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="edit-profile-photo fl-wrap">
-                                    <img src="images/avatar/1.jpg" class="respimg" alt="">
+                                    <img src="https://delifazil.com/assets/img/startup/team/r2.png" class="respimg" alt="">
                                     <div class="change-photo-btn">
                                         <div class="photoUpload">
                                             <span><i class="fa fa-upload"></i> Subir Foto</span>

@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\delifazil\Suscription;
 use App\Models\delifazil\Planes;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
-
+use DateTime;
 class SuscriptionController extends Controller
 {
     /**
@@ -46,16 +47,13 @@ class SuscriptionController extends Controller
      */
     public function store(Request $request)
     {
-        // $request['plan_id']=1;
-        // $request['user_id']=2;
+        
         $sus = new Suscription;
         $sus->plan_id=  $_POST['plan_id'];
-        $sus->user_id= $_POST['user_id'];
-        $sus->fin_created_at= '2021-01-28 22:02:08';
+        $sus->user_id= $_POST['user_id'];       
+        $sus->fin_created_at=Carbon::now()->addMonth(); 
         $sus->status= "Activo";
-        //dd($sus);
         $sus->save();
-       
         return redirect('/home');
 
     }

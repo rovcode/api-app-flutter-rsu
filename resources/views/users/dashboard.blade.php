@@ -62,15 +62,12 @@
         <!--section -->
         <section class="gray-section">
             <div class="container">
-                <div class="notification success fl-wrap">              
-                   
+                <div class="notification success fl-wrap">
                     @if($suscription=="Activo")
-                     <p class="msguser">Tu suscripción está activa <a href="perfil">más planes</a>!</p>
-                    
+                     <p class="msguser">Tu suscripción está activa y vence en <a href="perfil" style="color: blue">{{$terminasuscription}}</a> días!</p>                    
                     @endif
-                    
                     <a class="notification-close" href="#"><i class="fa fa-times"></i></a> 
-            </div>
+                </div>
                 <div class="section-title">
                     <h2>Recetas Sugeridas</h2>
                     <div class="section-subtitle">{{ Auth::user()->name }}</div>
@@ -111,8 +108,8 @@
                                         <h3><a href="listing-single.html">{{ $receta->name }}</a></h3>
                                         <p>{{ $receta->description }}</p>
                                         <div class="geodir-category-options fl-wrap">
-                                            <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
-                                                <span>(7 recomendaciones)</span>
+                                            <div class="listing-rating card-popup-rainingvis" data-starrating2="{{ $receta->calification }}">
+                                                <span>({{ $receta->calification }} recomendaciones)</span>
                                             </div>
                                             <div class="geodir-category-location"><a href="#"><i class="fa fa-home"
                                                         aria-hidden="true"></i> 3 bodegas</a></div>

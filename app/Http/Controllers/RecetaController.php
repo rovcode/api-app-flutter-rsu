@@ -6,8 +6,9 @@ use App\Models\delifazil\receta;
 use App\Models\delifazil\Suscription;
 use App\Models\delifazil\Planes;
 use App\Models\User;
+use DateTime;
 use Illuminate\Http\Request;
-
+use Carbon\Carbon;
 class RecetaController extends Controller
 {
     /**
@@ -26,8 +27,13 @@ class RecetaController extends Controller
             return view('users.planes', $datos);
          } 
          $status=$userSucription->status;
+         $fInicio=$userSucription->created_at;
+         $fFin=$userSucription->fin_created_at;       
+         $fechaEmision = Carbon::parse($fInicio);
+         $fechaExpiracion = Carbon::parse($fFin);        
+         $diasDiferencia = $fechaExpiracion->diffInDays($fechaEmision);
          if($status=="Prueba" || $status=="Activo"){           
-            return view('users.dashboard', ["recetas"=>$recetas,"suscription"=> $status]);
+            return view('users.dashboard', ["recetas"=>$recetas,"suscription"=> $status,"terminasuscription"=>$diasDiferencia]);
          }else if($status=="Terminada" || $status=="Finalizada"){
             $status=$userSucription->status;
             return view('users.profile', $datos);

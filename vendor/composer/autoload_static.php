@@ -526,6 +526,7 @@ class ComposerStaticInit3025a1cc4c691d5b2d7195a8ddb31a71
         'App\\Http\\Controllers\\PlanesController' => __DIR__ . '/../..' . '/app/Http/Controllers/PlanesController.php',
         'App\\Http\\Controllers\\RecetaController' => __DIR__ . '/../..' . '/app/Http/Controllers/RecetaController.php',
         'App\\Http\\Controllers\\SuscriptionController' => __DIR__ . '/../..' . '/app/Http/Controllers/SuscriptionController.php',
+        'App\\Http\\Controllers\\UsuarioController' => __DIR__ . '/../..' . '/app/Http/Controllers/UsuarioController.php',
         'App\\Http\\Controllers\\delifazil\\appController' => __DIR__ . '/../..' . '/app/Http/Controllers/delifazil/appController.php',
         'App\\Http\\Controllers\\delifazil\\planes' => __DIR__ . '/../..' . '/app/Http/Controllers/delifazil/planes.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
