@@ -11,16 +11,19 @@
       
             @include('./snippets/alterno')  
             <!-- wrapper -->
-            <div id="wrapper">
-                <div class="content">
+            <div id="wrapper" >
+                <div class="content" >
                    <!-- Map -->
                    <div class="map-container fw-map">
                     <div id="map-main"></div>
-                    <ul class="mapnavigation">
+                    <ul class="btn  big-btn circle-btn dec-btn  color-bg flat-btn" style="position: absolute;bottom: 70px;left:7px;z-index: 30; width: 170px;background: #FA9E22 !important">
+                      <a href="" style="color: white">Enviar Pedido</a>
+                    </div>
+                    <ul class="mapnavigation" style="margin-bottom: 15px !important;">
                         <li><a href="#" class="prevmap-nav"><i class="fa fa-angle-left "></i></a></li>
                         <li><a href="#" class="nextmap-nav"><i class="fa fa-angle-right "></i></a></li>
                     </ul> 
-                    <div class="scrollContorl " title="Enable Scrolling"><span><i class="fa fa-paper-plane"></i></span></div>
+                    <div style="margin-bottom: 7px !important;" class="scrollContorl " title="Enable Scrolling"><span><i class="fa fa-paper-plane"></i></span></div>
                    						
                 </div>
                 <!-- Map end -->
