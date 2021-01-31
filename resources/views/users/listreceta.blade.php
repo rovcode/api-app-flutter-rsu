@@ -21,7 +21,7 @@
                     <div class="profile-edit-page-header">
                         <h2>{{$receta->name}}</h2>                            
                     </div>
-                    <div class="row">
+                    <div class="row" style="margin-bottom: 100px !important;">
                         <div class="col-md-12">
                             <div class="profile-edit-container add-list-container">
                                 <div class="profile-edit-header fl-wrap">

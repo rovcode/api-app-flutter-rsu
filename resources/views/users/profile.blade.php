@@ -20,19 +20,32 @@
                         {{-- <div class="profile-edit-page-header">
                             <h2>Perfil</h2>                            
                         </div> --}}
-                        <div class="row">
-                            <div class="col-md-3">
-
+                        <div class="row" style="margin-bottom: 100px !important;">
+                            <div class="col-md-2">
+                                <div class="edit-profile-photo fl-wrap">
+                                    <div class="change-photo-btn">
+                                        <div class="photoUpload"  >
+                                       <a style="color:white !important;margin-bottom:5px !important ;" class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();"><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                                        {{ __('Cerrar Sesión') }}
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                           
                             <div class="col-md-10">
                                 <!-- profile-edit-container--> 
                                 <div class="profile-edit-container">
                                     <div class="profile-edit-header fl-wrap">
-                                        <h4>Mi Cuenta</h4>
+                                        <br> <h4>Mi Cuenta</h4>
                                     </div>
                                     <div class="custom-form">
                                         <label>Nombres <i class="fa fa-user-o"></i></label>
-                                        <input type="text" placeholder="" value="{{ Auth::user()->name }}"/>
+                                        <input type="text" placeholder="" value="{{ Auth::user()->name }}"/>                                       
                                         <label>Usuario<i class="fa fa-envelope-o"></i>  </label>
                                         <input type="text" placeholder="mail" value="{{ Auth::user()->email }}"/>
                                         <label>Teléfono<i class="fa fa-phone"></i>  </label>
@@ -40,7 +53,24 @@
                                         <label> Dirección <i class="fa fa-map-marker"></i>  </label>
                                         <input type="text" placeholder="No definido" value=""/>
                                         {{-- <label> Website <i class="fa fa-globe"></i>  </label>
+                                        
                                         <input type="text" placeholder="themeforest.net" value=""/>   --}}
+                                        <label> Foto<i class="fa fa-whatsapp"></i>  </label>
+                                        <div class="profile-edit-header fl-wrap">
+                                            <div class="col-md-2">
+                                                <div class="fl-wrap">
+                                                    <img src="https://delifazil.com/assets/img/startup/team/r2.png" class="respimg" alt="">
+                                                    <div class="change-photo-btn">
+                                                        <div class="photoUpload">
+                                                            <span><i class="fa fa-camera"></i></span>
+                                                            <input type="file" class="upload">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                 
+                                        </div>
+                                        
                                         <label> Notes</label>                                              
                                         <textarea cols="40" rows="3" placeholder="About Me"></textarea>
                                     </div>
@@ -87,7 +117,8 @@
                                         </div>    
                                     </div>
                                 </div>
-                                <!-- profile-edit-container end--> 										
+                                <!-- profile-edit-container end--> 
+                                										
                                 <!-- profile-edit-container--> 
                                 <div class="profile-edit-container">
                                     <div class="profile-edit-header fl-wrap" style="margin-top:30px">
@@ -100,22 +131,13 @@
                                         <input type="text" placeholder="https://twitter.com/" value=""/>                                      
                                         <label> Whatsapp <i class="fa fa-whatsapp"></i>  </label>
                                         <input type="text" placeholder="https://www.whatsapp.com" value=""/>
+                                      
                                         <button class="btn  big-btn  color-bg flat-btn">Guardar Cambios <i class="fa fa-angle-right"></i></button>
                                     </div>
                                 </div>
                                 <!-- profile-edit-container end-->                                        
                             </div>
-                            <div class="col-md-2">
-                                <div class="edit-profile-photo fl-wrap">
-                                    <img src="https://delifazil.com/assets/img/startup/team/r2.png" class="respimg" alt="">
-                                    <div class="change-photo-btn">
-                                        <div class="photoUpload">
-                                            <span><i class="fa fa-upload"></i> Subir Foto</span>
-                                            <input type="file" class="upload">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                     <!--profile-edit-wrap end -->

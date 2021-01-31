@@ -490,13 +490,15 @@ blockquote p {
 }
 .header-user-menu {
 	float:right;
-	position:relative;
-	top:20px;
 	margin-left:50px;
 	margin-right:40px;
+	position: fixed;
+    right: 0;
+    top: 10px;
+    z-index: 30;
 }
 .header-user-menu:after {
-	content:'';
+	content:'';	
 	position:absolute;
 	left:-70px;
 	height:30px;
@@ -6889,3 +6891,5 @@ header.main-header {
 	background-position:center;
 }
 }
+
+

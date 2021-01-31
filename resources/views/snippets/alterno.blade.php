@@ -13,8 +13,8 @@
     </a>
 
 </div>
-<div class="header-inner">
-    <div class="header-user-menu">
+{{-- <div class="header-inner">
+    <div class="header-user-menu" style="margin-top: 5px !important">
         <div class="header-user-name">
             <span><img src="https://delifazil.com/assets/img/startup/team/r2.png" alt=""></span>
             {{ Auth::user()->name }}
@@ -34,7 +34,7 @@
 
             </li>
         </ul>
-    </div>
+    </div> --}}
     {{--
     <!-- nav-button-wrap-->
     <div class="nav-button-wrap color-bg" style="background-color: transparent">

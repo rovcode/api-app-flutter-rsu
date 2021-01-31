@@ -18,19 +18,25 @@
             font-size: 15px !important;
         }
     </style>
-
+     
     <!--  loader end -->
     @include('./snippets/alterno')
+    <script type="text/javascript">
+        var sc=screen.width;
+        if(sc>768){
+           document.write("");
+        }
+     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Main   -->
-    <script>
+    {{-- <script>
         /* SLICK CAROUSEL */
         $(document).ready(function() {
             $(".slick-track").slick();
         });
         /*
 
-    </script>
+    </script> --}}
     <!-- wrapper -->
     <div id="wrapper">
         {{-- <div class="content">
@@ -69,7 +75,8 @@
                     <a class="notification-close" href="#"><i class="fa fa-times"></i></a> 
                 </div>
                 <div class="section-title">
-                    <h2>Recetas Sugeridas</h2>
+                    <h2>Recetas Sugeridas  </h2>
+                        
                     <div class="section-subtitle">{{ Auth::user()->name }}</div>
                     <span class="section-separator"></span>
                     <p>Sugerencias de nuestros nutricionistas y chefts, recuerda puedes filtrar otras recetas.</p><br>
@@ -132,58 +139,6 @@
             </div>
             <!--  carousel end-->
         </section>
-        <!-- section end -->
-        <div class="content">
-            <!--section -->
-            <section id="sec1">
-                <!-- container -->
-                <div class="container">
-                    <!-- profile-edit-wrap -->
-                    <div class="profile-edit-wrap">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="dashboard-list-box fl-wrap activities">
-                                    <div class="dashboard-header fl-wrap">
-                                        <h3>Actividades recientes</h3>
-                                    </div>
-                                    <!-- dashboard-list end-->
-                                    <div class="dashboard-list">
-                                        <div class="dashboard-message">
-                                            <span class="new-dashboard-item"><i class="fa fa-times"></i></span>
-
-                                            <div class="dashboard-message-text">
-                                                <p><i class="fa fa-check"></i> Su delivery a llegado <a href="#">
-                                                        calificar</a> ! </p>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- dashboard-list end-->
-                                    <!-- dashboard-list end-->
-                                    <div class="dashboard-list">
-                                        <div class="dashboard-message">
-                                            <span class="new-dashboard-item"><i class="fa fa-times"></i></span>
-
-                                            <div class="dashboard-message-text">
-                                                <p><i class="fa fa-heart"></i>Su bodega <a href="#">Mi tiendita</a> está
-                                                    abierta!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- dashboard-list end-->
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!--profile-edit-wrap end -->
-                </div>
-                <!--container end -->
-            </section>
-            <!-- section end -->
-            <div class="limit-box fl-wrap"></div>
-        </div>
     </div>
     <!-- wrapper end -->
 
