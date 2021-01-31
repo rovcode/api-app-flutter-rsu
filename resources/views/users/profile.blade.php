@@ -87,8 +87,8 @@
                                             <div class="col-md-4">
                                                 <div class="add-list-media-header">
                                                     <label class="radio inline">                                                       
-                                                       
-                                                    <input type="radio" name="planuser" @if($plan->id==1) checked @endif>
+                                                        {{-- @if($plan->id==1) checked @endif --}}
+                                                    <input type="radio" name="planuser" >
                                                     <span>Master Chef S/. 5.00 </span> 
                                                     </label>
                                                 </div>
@@ -98,7 +98,7 @@
                                             <div class="col-md-4">
                                                 <div class="add-list-media-header">
                                                     <label class="radio inline"> 
-                                                    <input type="radio" name="planuser" @if($plan->id==2) checked @endif>
+                                                    <input type="radio" name="planuser">
                                                     <span>Super Chef S/. 10.00</span> 
                                                     </label>
                                                 </div>
@@ -108,7 +108,7 @@
                                             <div class="col-md-4">
                                                 <div class="add-list-media-header">
                                                     <label class="radio inline"> 
-                                                    <input type="radio" name="planuser" @if($plan->id==3) checked @endif>
+                                                    <input type="radio" name="planuser" >
                                                     <span>Deli Cheff S/. 15.00</span> 
                                                     </label>
                                                 </div>
