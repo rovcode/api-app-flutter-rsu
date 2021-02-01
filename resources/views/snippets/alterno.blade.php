@@ -98,6 +98,7 @@
         .c-modal__close:hover {
             background-color: hsl(162, 20%, 90%);
         }
+    
     }
 
 </style>
@@ -119,16 +120,25 @@
     <div class="c-modal__inner">
         <div class="c-modal__nav">
             <a href="#" class="c-modal__cancel"><i class="fa fa-times" aria-hidden="true"></i></a>
-            <a href="#" class="c-modal__accept"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>            
+            <a id="nextBanner" style="cursor:pointer"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> 
+                       
         </div>
         {{-- <a href="#" class="c-modal__close" aria-label="Close modal"></a> --}}
-        <div class="c-modal__content">
-              <img class="imgTutorial" src="https://delifazil.com/assets/img/screenshot/1.png" alt="">
+        <div class="c-modal__content banners">
+              <img id="banner1" class="imgTutorial banner" src="https://delifazil.com/assets/img/screenshot/1.png" alt="">
         </div>
-        <div class="c-modal__content d-none">
-            <img class="imgTutorial" src="https://delifazil.com/assets/img/screenshot/2.png" alt="">
+        <div class="c-modal__content d-none banners">
+            <img id="banner2"  class="imgTutorial banner" src="https://delifazil.com/assets/img/screenshot/2.png" alt="">
         </div>
-        
+        <div class="c-modal__content d-none banners">
+            <img id="banner3" class="imgTutorial banner" src="https://delifazil.com/assets/img/screenshot/3.png" alt="">
+        </div>
+        <div class="c-modal__content d-none banners">
+            <img id="banner4" class="imgTutorial banner" src="https://delifazil.com/assets/img/screenshot/4.png" alt="">
+        </div>
+        <div class="c-modal__content d-none banners">
+            <img id="banner5" class="imgTutorial banner" src="https://delifazil.com/assets/img/screenshot/5.png" alt="">
+        </div>
     </div>
 </div>
 <!--Enn tutorial app-->
@@ -179,6 +189,7 @@
 </div>
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
+     
     (function() {
         var paradeiser_open;
 
@@ -237,14 +248,46 @@
 
     /* DEMO: Trigger open */
     location.hash = "modal";
-  //validando
-  var countBanner =1;
-  function clickNextBanner(){
-     countBanner +=1;
-  }
-  $("#nextBanner").on('click', function(){
-      clickNextBanner();
-      var banner=
-  });
+    //validando
+  
+        //PONE EL CONTADOR A 0
+        var count_click = 0;
+
+        //AÑADE UN CLICK AL EJECUTAR LA FUNCIÓN
+        function count_click_add() {
+        count_click += 1;
+        }
+
+        //MUESTRA CUANTOS CLICK LLEVAMOS
+        // alert(count_click);
+
+        //AÑADE A TODOS LOS BOTONES CON EL NAME count_click QUE AL SER PULSADOS EJECUTEN EL CONTADOR
+        $(document).ready(function(){
+                $("#nextBanner").on('click',function(){
+                    count_click_add();
+                    // alert(count_click);
+                    if(count_click==1){
+                        $("#banner1").hide('slow');
+                        $("#banner2").show('slow');
+                    }
+                    if(count_click==2){
+                        $("#banner2").hide('slow');
+                        $("#banner3").show('slow');
+                    }
+                    if(count_click==3){
+                        $("#banner3").hide('slow');
+                        $("#banner4").show('slow');
+                    }
+                    if(count_click==4){
+                        $("#banner4").hide('slow');
+                        $("#banner5").show('slow');
+                        $("#nextBanner").html("Selecionar Plan");
+                        $("#nextBanner").addClass('c-modal__accept');
+                    }
+                    if(count_click==5){
+                        $("#modal").hide('slow');
+                    }
+                });
+        });
 
 </script>
