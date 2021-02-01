@@ -73,9 +73,10 @@
         border-radius: .25rem;
         box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
         max-width: 30rem;
-        max-height: 35rem;
+        max-height: 40rem;
         padding: 1.25rem;
         position: relative;
+        overflow: hidden;
     }
 
     .c-modal__nav {
@@ -123,6 +124,9 @@
         {{-- <a href="#" class="c-modal__close" aria-label="Close modal"></a> --}}
         <div class="c-modal__content">
               <img class="imgTutorial" src="https://delifazil.com/assets/img/screenshot/1.png" alt="">
+        </div>
+        <div class="c-modal__content d-none">
+            <img class="imgTutorial" src="https://delifazil.com/assets/img/screenshot/2.png" alt="">
         </div>
         
     </div>
@@ -233,5 +237,14 @@
 
     /* DEMO: Trigger open */
     location.hash = "modal";
+  //validando
+  var countBanner =1;
+  function clickNextBanner(){
+     countBanner +=1;
+  }
+  $("#nextBanner").on('click', function(){
+      clickNextBanner();
+      var banner=
+  });
 
 </script>
