@@ -72,7 +72,7 @@
         background-color: #FFF;
         border-radius: .25rem;
         box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
-        max-width: 25rem;
+        max-width: 30rem;
         max-height: 35rem;
         padding: 1.25rem;
         position: relative;
@@ -86,8 +86,8 @@
         margin-block-start: 1rem;
     }
     .imgTutorial{
-        max-width: 25rem !important;
-        max-height: 30rem !important;
+        max-width: 30rem !important;
+        max-height: 40rem !important;
     }
     @media (hover: hover) {
         .c-modal__accept:hover {
