@@ -73,6 +73,7 @@
         border-radius: .25rem;
         box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
         max-width: 25rem;
+        max-height: 35rem;
         padding: 1.25rem;
         position: relative;
     }
@@ -84,7 +85,10 @@
         gap: 1rem;
         margin-block-start: 1rem;
     }
-
+    .imgTutorial{
+        max-width: 25rem !important;
+        max-height: 30rem !important;
+    }
     @media (hover: hover) {
         .c-modal__accept:hover {
             background-color: hsl(162, 50%, 24%);
@@ -114,12 +118,11 @@
     <div class="c-modal__inner">
         <div class="c-modal__nav">
             <a href="#" class="c-modal__cancel"><i class="fa fa-times" aria-hidden="true"></i></a>
-            <a href="#" class="c-modal__accept"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-            
+            <a href="#" class="c-modal__accept"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>            
         </div>
         {{-- <a href="#" class="c-modal__close" aria-label="Close modal"></a> --}}
         <div class="c-modal__content">
-              <img src="https://delifazil.com/assets/img/screenshot/1.png" alt="">
+              <img class="imgTutorial" src="https://delifazil.com/assets/img/screenshot/1.png" alt="">
         </div>
         
     </div>
