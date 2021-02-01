@@ -99,7 +99,7 @@
                          value="{{ old('email') }}" 
                          required autocomplete="email"
                           autofocus
-                          placeholder="980866911" data-validate="Ingrese su usuario o teléfono"
+                          placeholder="info@delifazil.com" data-validate="Ingrese su usuario o teléfono"
                           >
                         <span class="focus-input100"></span>
                         @error('email')

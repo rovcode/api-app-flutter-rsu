@@ -167,7 +167,7 @@
                     success();
                     setInterval(function() {
                         window.location.href="home";
-                    }, 4000);
+                    },3000);
                    
                     },
                     error: function(error){
