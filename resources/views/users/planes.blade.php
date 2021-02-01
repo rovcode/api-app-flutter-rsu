@@ -7,6 +7,7 @@
     </div>
     <!--  loader end -->
     @include('./snippets/alterno')
+    @include('./snippets/welcome')
     <!-- wrapper -->
     <div id="wrapper">
         <!--  content -->
