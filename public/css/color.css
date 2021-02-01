@@ -16,9 +16,9 @@
 }
 .gradient-bg , .listing-geodir-category  ,     .list-single-header-cat a , .box-widget-item .list-single-tags a:hover  , .nav-holder nav li a:before{
   background-color: #FA9E22;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FA9E22), to(#49CEFF));
-  background: -webkit-linear-gradient(top, #FA9E22, #49CEFF);
-  background: -moz-linear-gradient(top, #FA9E22, #49CEFF);
-  background: -ms-linear-gradient(top, #FA9E22, #49CEFF);
-  background: -o-linear-gradient(top, #FA9E22, #49CEFF);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FA9E22), to( #212121));
+  background: -webkit-linear-gradient(top, #FA9E22,  #212121);
+  background: -moz-linear-gradient(top, #FA9E22,  #212121);
+  background: -ms-linear-gradient(top, #FA9E22,  #212121);
+  background: -o-linear-gradient(top, #FA9E22,  #212121);
 }
