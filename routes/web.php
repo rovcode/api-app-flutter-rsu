@@ -32,6 +32,15 @@ Route::middleware('auth')->group(function () {
     Route::get('/checkout/{id}', "RecetaController@show");
     Route::get('/pedidos', function () {return view('users.pedidos');});
     Route::get('/suscripcion', function () {return view('users.suscription');});
-    Route::get('/geolocation', function () {return view('users.geolocation');});
+    Route::get('/geolocation', "BodegaController@bodegas");
     Route::get('/ingredientes', function () {return view('users.listreceta');});
+
+
+
+    Route::get('/admin', function () {return view('admin.index');});
+    Route::get('/admin/bodega', function () {return view('admin.bodega');});
+    //Bodegas
+    Route::post('admin/bodega/store',"BodegaController@store");
+    Route::get('admin/bodega/list',"BodegaController@index");
+
 });

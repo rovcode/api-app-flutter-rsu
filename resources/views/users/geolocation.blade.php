@@ -8,9 +8,14 @@
         </div>
         <!--loader end-->
         <!-- Main  -->
-      
+        <script type="text/javascript">
+            const user = {!! json_encode($bodegas) !!};
+            data = user;
+            // console.log(data);
+        </script>
             @include('./snippets/alterno')  
             <!-- wrapper -->
+          
             <div id="wrapper" >
                 <div class="content" >
                    <!-- Map -->
