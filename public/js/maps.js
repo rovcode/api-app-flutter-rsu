@@ -1,11 +1,5 @@
 (function ($) {
     "use strict";
-
-
-
-
-
-
     var markerIcon = {
         anchor: new google.maps.Point(22, 16),
         url: 'images/marker.png',
@@ -14,13 +8,6 @@
         anchor: new google.maps.Point(22, 16),
         url: 'images/markerU.png',
     }
-    //Obtenemos GPS del usuarios
-     //mi code
-           
-  
-
-//en mi code
-    //end GPS
     function mainMap(lu, longu) {
         function locationData(locationURL, locationCategory, locationImg, locationTitle, locationAddress, locationPhone, locationStarRating, locationRevievsCounter) {
             return ('<div class="map-popup-wrap"><div class="map-popup"><div class="infoBox-close"><i class="fa fa-times"></i></div><div class="map-popup-category">' + locationCategory + '</div><a href="' + locationURL + '" class="listing-img-content fl-wrap"><img src="' + locationImg + '" alt=""></a> <div class="listing-content fl-wrap"><div class="card-popup-raining map-card-rainting" data-staRrating="' + locationStarRating + '"><span class="map-popup-reviews-count">( ' + locationRevievsCounter + ' reviews )</span></div><div class="listing-title fl-wrap"><h4><a href=' + locationURL + '>' + locationTitle + '</a></h4><span class="map-popup-location-info"><i class="fa fa-map-marker"></i>' + locationAddress + '</span><span class="map-popup-location-phone"><i class="fa fa-phone"></i>' + locationPhone + '</span></div></div></div></div>')
@@ -34,55 +21,39 @@
 
             );
         }
-        var myLatlng = new google.maps.LatLng(lu,longu);
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            title:"Hola, Australia!"
-        });
-        locations.push(
-            [locationData('', 'Aquí estás', 'https://static.mercadonegro.pe/wp-content/uploads/2020/04/22203358/Bodegas-Per%C3%BA-1.jpg', 'Usuario', 'GPS', '9808', "5", "27"), lu, longu, 0, marker],
+        // var myLatlng = new google.maps.LatLng(lu,longu);
+        // var marker = new google.maps.Marker({
+        //     position: myLatlng,
+        //     title:"Hola, Australia!"
+        // });
+        // locations.push(
+        //     [locationData('', 'Aquí estás', 'https://static.mercadonegro.pe/wp-content/uploads/2020/04/22203358/Bodegas-Per%C3%BA-1.jpg', 'Usuario', 'GPS', '9808', "5", "27"), lu,longu , 0, marker],
 
-        );
-         // var locations = [
-        //     [locationData('https://delifazil.com/', 'Bodega Juanita', 'https://static.mercadonegro.pe/wp-content/uploads/2020/04/22203358/Bodegas-Per%C3%BA-1.jpg', 'Bodega 1', "Talara 135", "980866911", "5", "27"), -12.0285877, -77.0161032, 0, markerIcon],
-        //     [locationData('https://delifazil.com/', 'Bodega El Rey', 'https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PLLNGGZRBRBA3EZVL4JEFYKABA.jpg', 'Bodega 2', "Talara 139", "980866911", "4", "5"), -12.0291677, -77.0165942, 1, markerIcon],
-        //     [locationData('https://delifazil.com/', 'Mi Bodeguita', 'https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PLLNGGZRBRBA3EZVL4JEFYKABA.jpg', 'Bodega 3', "El bosque 1030", "980866911", "4", "5"), -12.0280997, -77.0169802, 2, markerIcon],
-        //     [locationData('https://delifazil.com/', 'Bodega Perú', 'https://static.mercadonegro.pe/wp-content/uploads/2020/04/22203358/Bodegas-Per%C3%BA-1.jpg', 'Bodega 4', "Talara 1365", "980866911", "4", "127"), -12.0260507, -77.0178732, 3, markerIcon],
-        //     [locationData('https://delifazil.com/', 'Bodega Delifazil', 'https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PLLNGGZRBRBA3EZVL4JEFYKABA.jpg', 'Bodega 5', "Calle 356", "980866911", "5", "43"), -12.0268667, -77.0178892, 4, markerIcon],
-        //     // [locationData('listing-single.html', 'Hotels', '', 'El Fanático', "70 Bright St, Jersey City, NJ", "+38099231212", "4", "7"), lu, longu, 5, markerIconUser],
-        //     [locationData('https://delifazil.com/', 'Mi tiendita', 'https://static.mercadonegro.pe/wp-content/uploads/2020/04/22203358/Bodegas-Per%C3%BA-1.jpg', 'Bodega 6', "123 Calle nueva", "980866911", "3", "4"), -12.0286187, -77.0164489, 6, markerIcon],
-        //     // [locationData('listing-single2.html', 'Hotels', 'images/all/22.jpg', 'Fancy Hotel', "Mt Carmel Pl, New York, NY", "+38099231212", "5", "3"), 40.58423508, -73.96099091, 7, markerIcon],
-        //     // [locationData('listing-single2.html', 'Hotels', 'images/all/7.jpg', 'Luxary Hotel-Spa', "1-30 Hunters Point Ave, Long Island City, NY", "+38099231212", "5", "12"), 40.58110616, -73.97678375, 8, markerIcon],
-        //     // [locationData('listing-single3.html', 'Conference and Events', 'images/all/16.jpg', 'Web Design Event ', "726-1728 2nd Ave, New York, NY", "+38099231212", "5", "17"), 40.73112881, -74.07897948, 9, markerIcon],
-        //     // [locationData('listing-single3.html', 'Gym - Fitness', 'images/all/3.jpg', 'Gym in the Center', "9443 Fairview Ave, North Bergen, NJ", "+38099231212", "4", "11"), 40.67386831, -74.10438536, 10, markerIcon],
-        // ];
-        
-        navigator.geolocation.getCurrentPosition(function(position){ 
-            // moveToLocation(position.coords.latitude, position.coords.longitude);
-            var l=position.coords.latitude;
-            var lo= position.coords.longitude;
-            //  myLatlng2['lat'] = l;
-            //  myLatlng2['lng'] = lo;
-             mainMap(l,lo);
-            // myLatlng2 = {nom:l};
-            // console.log(myLatlng2.nom);
-        });
-         
-         const myLatlng2 = {lat : lu,lng:longu };
-        
-  
-         // Añadir el marcador al mapa con una llamada a setMap();
-         marker.setMap(map);
-        //  const myLatlng = {lat: -12.0287106, lng: -77.01610529999999}; 
-        //  console.log(myLatlng2);
-        //  console.log(myLatlng);
-        //marcador
-         // a este marcador le añadimos un icono personalizado
-      
-        var map = new google.maps.Map(document.getElementById('map-main'), {           
+
+        // navigator.geolocation.getCurrentPosition(function (position) {
+        //     alert(position.coords.latitude+"lo"+ position.coords.longitude);
+        //     // var l = position.coords.latitude;
+        //     // var lo = position.coords.longitude;           
+        //     // console.log(l, lo);
+        // });
+        // //usamos la API para geolocalizar el usuario
+        var coords = {};
+        navigator.geolocation.getCurrentPosition(
+            function (position){
+              coords =  {
+                lng: position.coords.longitude,
+                lat: position.coords.latitude
+              };
+              alert(coords);  //pasamos las coordenadas al metodo para crear el mapa
+              
+             
+            },function(error){console.log(error);});
+
+        const myLatlng2 = { lat: -12.0287167, lng: -77.0161282 };
+        var map = new google.maps.Map(document.getElementById('map-main'), {
             zoom: 19,
             scrollwheel: false,
-            center:myLatlng2,
+            center: myLatlng2,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             zoomControl: false,
             mapTypeControl: false,
@@ -101,7 +72,7 @@
                 }]
             }]
         });
-        
+
 
         var boxText = document.createElement("div");
         boxText.className = 'map-box'
@@ -260,7 +231,7 @@
     }
 
     function singleMap() {
-       
+
         var myLatLng = {
             lng: $('#singleMap').data('longitude'),
             lat: $('#singleMap').data('latitude'),
