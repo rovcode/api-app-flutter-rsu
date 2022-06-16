@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use \App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::resource('usuarios','UserController');
 Route::resource('roles','RolController');
+Route::post('regitrar',[AuthController::class,'registro']);
+Route::post('login',[AuthController::class,'login']);
