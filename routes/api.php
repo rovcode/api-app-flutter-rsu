@@ -19,5 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::resource('usuarios','UserController');
 Route::resource('roles','RolController');
-Route::post('regitrar',[AuthController::class,'registro']);
+Route::post('registrar',[AuthController::class,'registro']);
 Route::post('login',[AuthController::class,'login']);
