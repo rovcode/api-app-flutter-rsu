@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
-class UserController extends Controller
+use App\Models\Bebidas;
+class BebidasController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,17 @@ class UserController extends Controller
      */
     public function index()
     {
-        return User::all();
+        return Bebidas::all();
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+       
     }
 
     /**
@@ -24,7 +34,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-       return User::create($request->all());
+        return Bebidas::create($request->all());
     }
 
     /**
@@ -35,8 +45,20 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        return User::find($id); 
+        return Bebidas::find($id);
     }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
     /**
      * Update the specified resource in storage.
      *
@@ -46,7 +68,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return User::find($id)->update($request);
+        return Bebidas::find($id)->update($request);
     }
 
     /**
@@ -57,6 +79,6 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        return User::destroy($id);
+        return Bebidas::destroy($id);
     }
 }
