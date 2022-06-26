@@ -13,7 +13,11 @@ class MesaController extends Controller
      */
     public function index()
     {
-        return Mesa::all();
+       $mesas = Mesa::all();
+       return response()->json(
+         array('success'=>true, 
+         'data'=>$mesas
+         ), 200);
     }
 
     /**
