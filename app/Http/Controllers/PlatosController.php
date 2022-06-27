@@ -13,7 +13,12 @@ class PlatosController extends Controller
      */
     public function index()
     {
-        return Platos::all();
+        //return Platos::all();
+        $platos= Platos::all();
+        return response()->json(
+          array('success'=>true, 
+          'data'=>$platos
+          ), 200);
     }
 
     /**
