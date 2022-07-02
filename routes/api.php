@@ -31,16 +31,16 @@ Route::post('registrarplato',[PlatosController::class,'store']);
 Route::get('platos',[PlatosController::class,'index']);
 Route::get('detallesplato/{id}',[PlatosController::class,'show']);
 Route::post('actualizarplato/{id}',[PlatosController::class,'update']);
-Route::post('actualizarplato/{id}',[PlatosController::class,'destroy']);
+Route::post('eliminarplato/{id}',[PlatosController::class,'destroy']);
 
 Route::post('registrarbebida',[BebidasController::class,'store']);
 Route::get('bebidas',[BebidasController::class,'index']);
 Route::get('detallesbebida/{id}',[BebidasController::class,'show']);
 Route::post('actualizarbebida/{id}',[BebidasController::class,'update']);
-Route::post('actualizarbebida/{id}',[BebidasController::class,'destroy']);
+Route::post('eliminarbebida/{id}',[BebidasController::class,'destroy']);
 
 Route::post('registrarmesa',[MesaController::class,'store']);
 Route::get('mesas',[MesaController::class,'index']);
 Route::get('detallesmesa/{id}',[MesaController::class,'show']);
 Route::post('actualizarmesa/{id}',[MesaController::class,'update']);
-Route::post('actualizarmesa/{id}',[MesaController::class,'destroy']);
+Route::post('eliminarmesa/{id}',[MesaController::class,'destroy']);

@@ -16,5 +16,5 @@ class Mesa extends Model
     ];
     public function reserva(){
         return $this.hasMany(Reserva::class);
-    } 
+    }  
 }
