@@ -50,7 +50,12 @@ class PlatosController extends Controller
      */
     public function show($id)
     {
-        return Platos::find($id);
+       // return Platos::find($id);
+        $platos= Platos::find($id);
+        return response()->json(
+          array('success'=>true, 
+          'data'=>$platos
+          ), 200);
     }
 
     /**
