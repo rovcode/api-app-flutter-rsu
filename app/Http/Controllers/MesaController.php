@@ -72,7 +72,10 @@ class MesaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return Mesa::find($id)->update($request);
+        $mesa = Mesa::find($id);
+        $mesa->estado = $request->input('estado');
+        $mesa->update();
+        print($mesa);
     }
 
     /**
