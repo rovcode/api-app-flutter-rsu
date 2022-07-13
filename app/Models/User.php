@@ -27,6 +27,9 @@ class User extends Authenticatable
     public function rols(){
         return $this.belongsToMany(Rol::class);
     }
+    public function reserva(){
+        return $this.hasMany(Reserva::class);
+    }  
 
     /**
      * The attributes that should be hidden for serialization.

@@ -7,6 +7,7 @@ use \App\Http\Controllers\UserController;
 use \App\Http\Controllers\MesaController;
 use \App\Http\Controllers\PlatosController;
 use \App\Http\Controllers\BebidasController;
+use \App\Http\Controllers\ResevasController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -44,3 +45,9 @@ Route::get('mesas',[MesaController::class,'index']);
 Route::get('detallesmesa/{id}',[MesaController::class,'show']);
 Route::post('actualizarmesa/{id}',[MesaController::class,'update']);
 Route::post('eliminarmesa/{id}',[MesaController::class,'destroy']);
+
+Route::post('registrarreserva',[ResevasController::class,'store']);
+Route::get('reservas',[ResevasController::class,'index']);
+Route::get('detallesreserva/{id}',[ResevasController::class,'show']);
+Route::post('actualizarreserva/{id}',[ResevasController::class,'update']);
+Route::post('eliminarreserva/{id}',[ResevasController::class,'destroy']);
